@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@id/rlAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatar"
+                    android:layout_width="@dimen/size_52"
+                    android:layout_height="@dimen/size_52"
+                    android:layout_margin="@dimen/size_16"
+                    android:src="@color/green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/civAvatar"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/civAvatar"
+                        android:text="Hello, "
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/civAvatar"
+                        android:text="Pattrich William"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/text_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivNotification"
+                    android:layout_width="@dimen/size_28"
+                    android:layout_height="@dimen/size_28"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="@dimen/size_16"
+                    android:src="@drawable/baseline_notifications_none_24"
+                    app:tint="@color/green" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvOtomasi"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@id/rlAccount"
+                android:layout_marginHorizontal="@dimen/size_48"
+                android:layout_marginTop="@dimen/size_16"
+                app:cardCornerRadius="@dimen/size_16"
+                app:cardElevation="@dimen/size_8">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.7"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bg_leaves" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Sunday, 31 July 2023"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_20"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/size_160"
+                android:layout_height="@dimen/size_100"
+                android:layout_below="@id/cvOtomasi"
+                android:layout_marginStart="@dimen/size_24"
+                android:layout_marginTop="@dimen/size_24"
+                app:cardCornerRadius="@dimen/size_16"
+                app:cardElevation="@dimen/size_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size_16"
+                    android:layout_marginVertical="@dimen/size_8"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:id="@+id/switchOtomatis"
+                        android:gravity="start" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Otomasi" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPompa"
+                android:layout_width="@dimen/size_160"
+                android:layout_height="@dimen/size_100"
+                android:layout_below="@id/cvOtomasi"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/size_24"
+                android:layout_marginEnd="@dimen/size_24"
+                app:cardCornerRadius="@dimen/size_16"
+                app:cardElevation="@dimen/size_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size_16"
+                    android:layout_marginVertical="@dimen/size_8"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:id="@+id/switchPompaAir"
+                        android:gravity="start" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pompa Air" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvPompaPupuk"
+                android:layout_width="@dimen/size_160"
+                android:layout_height="@dimen/size_100"
+                android:layout_below="@id/cvPompa"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_24"
+                app:cardCornerRadius="@dimen/size_16"
+                app:cardElevation="@dimen/size_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size_16"
+                    android:layout_marginVertical="@dimen/size_8"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchPompaPupuk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:gravity="start" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pompa pupuk" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvTitleWeekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cvPompaPupuk"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:layout_marginTop="@dimen/size_16"
+                android:text="Weekly Report"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_300"
+                android:layout_below="@id/tvTitleWeekly"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:layout_marginTop="@dimen/size_8"
+                android:layout_marginBottom="@dimen/size_16"
+                app:cardCornerRadius="@dimen/size_16"
+                app:cardElevation="@dimen/size_8">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

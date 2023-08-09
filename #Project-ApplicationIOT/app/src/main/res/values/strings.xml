@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Application IOT</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="login_now"><u>Login now</u></string>
+    <string name="login">Login</string>
+    <string name="registration">Register</string>
+    <string name="password">Password</string>
+    <string name="enter_here">Enter here...</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="home">Home</string>
+    <string name="location">Location</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="language">Language</string>
+    <string name="logout">Logout</string>
+    <string name="language_changed">Bahasa berubah</string>
+
+</resources>

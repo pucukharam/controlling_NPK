@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application IOT</string>
+    <string name="forgot_password"><u>Lupa password?</u></string>
+    <string name="login_now"><u>Masuk sekarang</u></string>
+    <string name="login">Masuk</string>
+    <string name="registration">Daftar</string>
+    <string name="password">Kata sandi</string>
+    <string name="enter_here">Masukkan disini...</string>
+    <string name="name">Nama</string>
+    <string name="phone_number">Nomor telefon</string>
+    <string name="already_have_an_account">Sudah punya akun?</string>
+    <string name="home">Beranda</string>
+    <string name="location">Lokasi</string>
+    <string name="profile">Profil</string>
+    <string name="notification">Notifikasi</string>
+    <string name="language">Bahasa</string>
+    <string name="language_changed">Language Changed</string>
+    <string name="logout">Keluar</string>
+
+</resources>
